@@ -8,7 +8,7 @@ jobs:
   breaking-changes-label:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: angular/dev-infra/github-actions/breaking-changes-label@f64f8085a7b75368a97d05f0274471d42cf0f12f
         with:
           angular-robot-key: ${{ secrets.ANGULAR_ROBOT_PRIVATE_KEY }}
